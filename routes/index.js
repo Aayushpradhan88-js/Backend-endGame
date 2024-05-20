@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.1:27017/backenddb");
+mongoose.connect("mongodb://127.0.1:27017/backenddb"); /* to create mongodb this is basic code */
 
 const userSchema = mongoose.Schema({
 
@@ -10,5 +10,3 @@ const userSchema = mongoose.Schema({
 })
 
 module.exports = mongoose.model("user", userSchema);
-
-
